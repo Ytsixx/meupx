@@ -8,8 +8,8 @@ export default function Home() {
           className="dark:invert"
           src="/next.png"
           alt="Next.js logo"
-          width={180}
-          height={38}
+          width={220}
+          height={50}
           priority
         />
         <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
