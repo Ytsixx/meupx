@@ -1,5 +1,31 @@
 'use client';
 
+// page.j
+
+import { useRouter } from 'next/navigation';
+
+export default function Home() {
+  const router = useRouter();
+
+  // Função para navegar para a próxima página
+  const handleNavigate = () => {
+    router.push('/secondPage');  // Substitua com o caminho da sua próxima página
+  };
+
+  return (
+    <div>
+      <h1>Bem-vindo à Página Inicial</h1>
+      <button onClick={handleNavigate}>Ir para outra página</button>
+    </div>
+  );
+}
+
+
+
+
+
+
+/*
 import { useEffect } from 'react';
 import { useRouter } from 'next/navigation'; // Alterar para 'next/navigation'
 
@@ -8,8 +34,8 @@ export default function Home() {
 
   useEffect(() => {
     setTimeout(() => {
-      router.push('/secondPage');
-    }, 3000);
+      router.push('/');
+    }, 3000r
   }, [router]);
 
   return (
@@ -20,3 +46,4 @@ export default function Home() {
     </div>
   );
 }
+*/
