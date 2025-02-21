@@ -1,8 +1,14 @@
-// pages/secondPage.js
-export default function SecondPage() {
+'use client'
+
+import Link from 'next/link';
+
+export default function OutraPagina() {
   return (
-    <div className="flex justify-center items-center h-screen">
-      <h1>Bem-vindo à segunda página!</h1>
+    <div>
+      <h1>Esta é a outra página</h1>
+      <Link href="/">
+        <button>Voltar para a página inicial</button>
+      </Link>
     </div>
   );
 }
