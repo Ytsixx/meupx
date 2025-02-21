@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div>
       <h1>Bem-vindo à Página Inicial</h1>
-      <Link href="/secondPage">
+      <Link href="/agora">
         <button>Ir para outra página</button>
       </Link>
     </div>
