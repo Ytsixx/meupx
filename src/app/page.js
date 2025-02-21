@@ -1,14 +1,15 @@
+'use client';
+
 import { useEffect } from 'react';
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation'; // Alterar para 'next/navigation'
 
 export default function Home() {
   const router = useRouter();
 
   useEffect(() => {
-    // Redirecionar após 3 segundos
     setTimeout(() => {
       router.push('/secondPage');
-    }, 3000); // 3000ms = 3 segundos
+    }, 3000);
   }, [router]);
 
   return (
